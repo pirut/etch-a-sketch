@@ -8,6 +8,15 @@ function addBox(append) {
     append.appendChild(box);
 }
 
+function addRow(append, boxAmt) {
+    const row = document.createElement("div");
+    row.className = "row";
+    for (let i = 0; i < boxAmt; i++) {
+        addBox(row);
+    }
+    append.appendChild(row);
+}
+
 createGridBtn.addEventListener("click", (e) => {
-    addBox(grid);
+    addRow(grid, 10);
 });
