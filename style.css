@@ -3,12 +3,16 @@ body {
 }
 
 .box {
+    display: flex;
+    flex: none;
     width: 10px;
     height: 10px;
     border: 2px solid white;
 }
 
 .boxToggle {
+    display: flex;
+    flex: none;
     width: 10px;
     height: 10px;
     border: 2px solid white;
