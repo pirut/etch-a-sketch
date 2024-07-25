@@ -17,6 +17,14 @@ function addRow(append, boxAmt) {
     append.appendChild(row);
 }
 
+function createGrid(width, height) {
+    for (let i = 0; i < height; i++) {
+        addRow(grid, width);
+    }
+}
+
 createGridBtn.addEventListener("click", (e) => {
-    addRow(grid, 10);
+    const width = prompt("Width?");
+    const height = prompt("Height?");
+    createGrid(width, height);
 });

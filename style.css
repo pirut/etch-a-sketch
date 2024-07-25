@@ -7,3 +7,9 @@ body {
     height: 10px;
     border: 2px solid white;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: none;
+}
