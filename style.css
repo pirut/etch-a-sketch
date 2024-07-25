@@ -8,6 +8,13 @@ body {
     border: 2px solid white;
 }
 
+.boxToggle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    background-color: white;
+}
+
 .row {
     display: flex;
     flex-direction: row;

@@ -1,7 +1,6 @@
 const createGridBtn = document.querySelector(".createGridBtn");
 const resetGridBtn = document.querySelector(".resetGridBtn");
 const grid = document.querySelector(".grid");
-const gridReset = grid;
 
 function addBox(append) {
     const box = document.createElement("div");
@@ -30,6 +29,12 @@ function resetGrid(resetter) {
     }
 }
 
+function toggleColor(event) {
+    if (event.target.className === "box") {
+        event.target.className = "boxToggle";
+    }
+}
+
 createGridBtn.addEventListener("click", (e) => {
     resetGrid(grid);
     const width = prompt("Width?");
@@ -39,4 +44,8 @@ createGridBtn.addEventListener("click", (e) => {
 
 resetGridBtn.addEventListener("click", (e) => {
     resetGrid(grid);
+});
+
+grid.addEventListener("mouseover", (e) => {
+    toggleColor(e);
 });
